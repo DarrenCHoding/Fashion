@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MONO — a study in monochrome. Sculptural tailoring, precise knitwear and quiet luxury accessories. Explore the FW26 collection." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>MONO — Fall/Winter 26 | A Study in Monochrome</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f4f2ee' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top">
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <span class="preloader__word">M<span>O</span>NO</span>
+    <span class="preloader__line"><span></span></span>
+  </div>
+
+  <!-- ============ CURSOR (desktop) ============ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="topbar" role="note">
+    <p>Complimentary shipping &amp; returns worldwide — the FW26 collection has arrived</p>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#collection" data-cursor="hover">Collection</a></li>
+          <li><a class="nav__link" href="#campaign"   data-cursor="hover">Campaign</a></li>
+          <li><a class="nav__link" href="#lookbook"   data-cursor="hover">Lookbook</a></li>
+          <li><a class="nav__link" href="#atelier"    data-cursor="hover">Atelier</a></li>
+        </ul>
+      </nav>
+
+      <a href="#top" class="header__logo" aria-label="MONO — home">MONO</a>
+
+      <div class="header__actions">
+        <button class="icon-btn icon-btn--bag" id="cartBtn" aria-label="Open shopping bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 8h14l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 8Z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+          <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <ul class="menu__list">
+        <li style="--i:0"><a href="#collection" class="menu__link">Collection</a></li>
+        <li style="--i:1"><a href="#campaign"   class="menu__link">Campaign</a></li>
+        <li style="--i:2"><a href="#lookbook"   class="menu__link">Lookbook</a></li>
+        <li style="--i:3"><a href="#atelier"    class="menu__link">Atelier</a></li>
+        <li style="--i:4"><a href="#newsletter" class="menu__link">Newsletter</a></li>
+      </ul>
+    </nav>
+    <p class="menu__foot">MONO — a study in monochrome<br />Milano · Paris · Tokyo</p>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <figure class="hero__media" id="heroMedia">
+        <img
+          src="https://image.shutterstock.com/z/stock-photo-elegant-woman-with-black-bob-hairstyle-wearing-a-white-gown-and-statement-jewelry-ideal-for-2694965429.jpg"
+          alt="Model with a black bob wearing a sculptural white MONO gown" />
+      </figure>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Fall / Winter 2026</p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span>A study</span></span>
+          <span class="hero__line"><span>in <em>monochrome</em></span></span>
+        </h1>
+        <div class="hero__cta reveal">
+          <a href="#collection" class="btn btn--light" data-cursor="hover">Explore the collection</a>
+          <a href="#campaign" class="btn btn--ghost" data-cursor="hover">View the campaign</a>
+        </div>
+      </div>
+
+      <a href="#collection" class="hero__scroll" aria-label="Scroll to collection">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>FW26 — Tone on tone&nbsp;·&nbsp;</span><span>Sculpted tailoring&nbsp;·&nbsp;</span>
+        <span>Cashmere in greyscale&nbsp;·&nbsp;</span><span>Made in Italy&nbsp;·&nbsp;</span>
+        <span>FW26 — Tone on tone&nbsp;·&nbsp;</span><span>Sculpted tailoring&nbsp;·&nbsp;</span>
+        <span>Cashmere in greyscale&nbsp;·&nbsp;</span><span>Made in Italy&nbsp;·&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ COLLECTION ============ -->
+    <section class="section collection" id="collection">
+      <header class="section__head">
+        <p class="kicker reveal">01 — The Collection</p>
+        <h2 class="section__title reveal">New arrivals,<br /><em>quietly radical</em></h2>
+        <div class="filters reveal" role="group" aria-label="Filter products">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="outerwear"  aria-pressed="false">Outerwear</button>
+          <button class="filter" data-filter="tailoring"  aria-pressed="false">Tailoring</button>
+          <button class="filter" data-filter="knitwear"   aria-pressed="false">Knitwear</button>
+          <button class="filter" data-filter="accessories" aria-pressed="false">Accessories</button>
+        </div>
+      </header>
+
+      <div class="grid" id="productGrid">
+
+        <article class="card reveal" data-category="outerwear"
+          data-name="Arc Leather Trench" data-price="3950"
+          data-desc="A floor-skimming trench cut from glazed nappa leather. Storm flap, horn buttons, hand-finished belt."
+          data-img="https://image.shutterstock.com/z/stock-photo-elegant-woman-wearing-a-black-leather-trench-coat-sheer-stockings-and-high-heels-sits-in-a-2733867711.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-elegant-woman-wearing-a-black-leather-trench-coat-sheer-stockings-and-high-heels-sits-in-a-2733867711.jpg" alt="Model seated in a black leather MONO trench coat" />
+            <span class="card__tag">New</span>
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Arc Leather Trench</h3>
+            <p class="card__meta">Outerwear</p>
+            <p class="card__price">€3,950</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-category="tailoring"
+          data-name="Ombra Tailored Blazer" data-price="1890"
+          data-desc="Sharp-shouldered blazer in double-faced wool. Cut close, lined in silk, finished with a single covered button."
+          data-img="https://image.shutterstock.com/z/stock-photo-beautiful-young-woman-in-a-black-jacket-and-tights-model-in-a-black-and-white-contrast-studio-2594407645.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-beautiful-young-woman-in-a-black-jacket-and-tights-model-in-a-black-and-white-contrast-studio-2594407645.jpg" alt="Model wearing a sharply tailored black MONO blazer" />
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Ombra Tailored Blazer</h3>
+            <p class="card__meta">Tailoring</p>
+            <p class="card__price">€1,890</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-category="outerwear"
+          data-name="Grafica Faux-Fur Coat" data-price="2450"
+          data-desc="A graphic monochrome faux-fur coat with an exaggerated collar. Fully recycled pile, satin lined."
+          data-img="https://image.shutterstock.com/z/stock-photo-fashionable-woman-poses-in-a-black-and-white-faux-fur-coat-with-a-bold-pattern-wearing-a-black-2583662145.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-fashionable-woman-poses-in-a-black-and-white-faux-fur-coat-with-a-bold-pattern-wearing-a-black-2583662145.jpg" alt="Model in a bold black and white MONO faux-fur coat" />
+            <span class="card__tag">Runway</span>
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Grafica Faux-Fur Coat</h3>
+            <p class="card__meta">Outerwear</p>
+            <p class="card__price">€2,450</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-category="knitwear"
+          data-name="Nube Cashmere Knit" data-price="890"
+          data-desc="Cloud-weight cashmere knitted in the round for a seamless drape. Garment-dyed in our signature écru."
+          data-img="https://image.shutterstock.com/z/stock-photo-a-stylish-woman-stands-gracefully-in-a-fashion-studio-dressed-in-a-warm-light-brown-knit-sweater-2622596907.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-a-stylish-woman-stands-gracefully-in-a-fashion-studio-dressed-in-a-warm-light-brown-knit-sweater-2622596907.jpg" alt="Model in an écru MONO cashmere knit" />
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Nube Cashmere Knit</h3>
+            <p class="card__meta">Knitwear</p>
+            <p class="card__price">€890</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-category="tailoring"
+          data-name="Sartoria Wool Suit" data-price="2780"
+          data-desc="Two-piece suit in dry-handle wool. Soft shoulder, side adjusters, trousers with a single forward pleat."
+          data-img="https://image.shutterstock.com/z/stock-photo-black-and-white-portrait-of-a-stylish-young-man-on-a-white-background-wearing-a-black-classic-suit-2592150555.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-black-and-white-portrait-of-a-stylish-young-man-on-a-white-background-wearing-a-black-classic-suit-2592150555.jpg" alt="Model in a black MONO wool suit and black shirt" />
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Sartoria Wool Suit</h3>
+            <p class="card__meta">Tailoring</p>
+            <p class="card__price">€2,780</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-category="tailoring"
+          data-name="Alba Column Dress" data-price="3200"
+          data-desc="A minimalist column dress in bonded crepe. Clean neckline, invisible closure, floor-length fall."
+          data-img="https://image.shutterstock.com/z/stock-photo-elegant-woman-in-minimalist-white-outfit-showcasing-sophisticated-jewelry-against-neutral-2560375745.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-elegant-woman-in-minimalist-white-outfit-showcasing-sophisticated-jewelry-against-neutral-2560375745.jpg" alt="Model in a minimalist white MONO column dress" />
+            <span class="card__tag">New</span>
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Alba Column Dress</h3>
+            <p class="card__meta">Tailoring</p>
+            <p class="card__price">€3,200</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-category="accessories"
+          data-name="Piega Quilted Bag" data-price="1650"
+          data-desc="Top-handle bag in quilted calf leather. Hand-stitched, magnetic closure, suede interior."
+          data-img="https://image.shutterstock.com/z/stock-photo-black-top-handle-quilted-women-s-handbag-displayed-as-a-fashion-accessory-representing-elegance-2733684385.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-black-top-handle-quilted-women-s-handbag-displayed-as-a-fashion-accessory-representing-elegance-2733684385.jpg" alt="Black quilted MONO top-handle bag" />
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Piega Quilted Bag</h3>
+            <p class="card__meta">Accessories</p>
+            <p class="card__price">€1,650</p>
+          </div>
+        </article>
+
+        <article class="card reveal" data-category="accessories"
+          data-name="Sella Leather Boot" data-price="1120"
+          data-desc="Ankle boot in bone-white calf leather on a stacked heel. Blake-stitched in Tuscany."
+          data-img="https://image.shutterstock.com/z/stock-photo-white-leather-boot-rear-view-isolated-on-gray-background-with-shadow-2009959580.jpg">
+          <figure class="card__media" data-cursor="view">
+            <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-white-leather-boot-rear-view-isolated-on-gray-background-with-shadow-2009959580.jpg" alt="Bone-white MONO leather ankle boot" />
+            <div class="card__actions">
+              <button class="card__quick" data-action="quickview">Quick view</button>
+              <button class="card__add"   data-action="add">Add to bag</button>
+            </div>
+          </figure>
+          <div class="card__info">
+            <h3 class="card__name">Sella Leather Boot</h3>
+            <p class="card__meta">Accessories</p>
+            <p class="card__price">€1,120</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CAMPAIGN ============ -->
+    <section class="section campaign" id="campaign">
+      <div class="campaign__grid">
+        <figure class="campaign__media reveal" data-parallax>
+          <img loading="lazy"
+            src="https://image.shutterstock.com/z/stock-photo-elegant-black-and-white-portrait-of-a-woman-in-a-white-shirt-and-tie-featuring-minimalist-jewelry-2559898015.jpg"
+            alt="Black and white campaign portrait in a white shirt and tie" />
+        </figure>
+        <div class="campaign__copy">
+          <p class="kicker reveal">02 — The Campaign</p>
+          <h2 class="section__title reveal">Tone<br /><em>on tone</em></h2>
+          <p class="lead reveal">Shot in a single afternoon of northern light, FW26 strips colour away until only line, texture and shadow remain. What is left is the essential garment.</p>
+          <a href="#lookbook" class="link-arrow reveal" data-cursor="hover">See the lookbook <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="campaign__media campaign__media--tall reveal" data-parallax>
+          <img loading="lazy"
+            src="https://image.shutterstock.com/z/stock-photo-androgynous-black-male-model-in-elegant-white-jacket-touching-necklace-and-leg-and-looking-at-2191665299.jpg"
+            alt="Model in an elegant white MONO jacket in a dim room" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto">
+      <blockquote class="manifesto__quote reveal">
+        <p>“Colour asks for attention.<br /><em>Form earns it.</em>”</p>
+        <cite>— MONO, Manifesto N°1</cite>
+      </blockquote>
+    </section>
+
+    <!-- ============ LOOKBOOK ============ -->
+    <section class="section lookbook" id="lookbook">
+      <header class="section__head section__head--row">
+        <div>
+          <p class="kicker reveal">03 — Lookbook</p>
+          <h2 class="section__title reveal">Worn in<br /><em>the wild</em></h2>
+        </div>
+        <p class="section__hint reveal" aria-hidden="true">Drag to explore →</p>
+      </header>
+
+      <div class="strip" id="strip" tabindex="0" aria-label="Lookbook gallery, scrolls horizontally">
+        <figure class="strip__item">
+          <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-girl-cross-the-street-at-a-pedestrian-crossing-trendy-street-style-photography-the-girl-dressed-2073183716.jpg" alt="Look 01 — trench coat at a pedestrian crossing" />
+          <figcaption>Look 01 — Crosswalk</figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-white-young-woman-in-black-clothes-urban-style-1902190492.jpg" alt="Look 02 — black tailoring against an urban backdrop" />
+          <figcaption>Look 02 — Concrete</figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-a-stylish-woman-wearing-a-trench-coat-and-sunglasses-leans-against-a-car-on-a-coastal-road-exuding-2802097323.jpg" alt="Look 03 — trench coat on a coastal road, monochrome" />
+          <figcaption>Look 03 — Coast Road</figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-two-stylish-women-with-sleek-hairstyles-and-elegant-jewelry-pose-against-a-minimalist-background-2552236139.jpg" alt="Look 04 — two models against a minimalist backdrop" />
+          <figcaption>Look 04 — Duet</figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img loading="lazy" src="https://image.shutterstock.com/z/stock-photo-street-fashion-gorgeous-woman-in-a-coat-poses-on-the-street-on-an-autumn-day-2523815793.jpg" alt="Look 05 — wool coat on an autumn street" />
+          <figcaption>Look 05 — October</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ATELIER ============ -->
+    <section class="section atelier" id="atelier">
+      <div class="atelier__grid">
+        <div class="atelier__copy">
+          <p class="kicker kicker--light reveal">04 — The Atelier</p>
+          <h2 class="section__title reveal">Made slowly,<br /><em>made once</em></h2>
+          <p class="lead reveal">Every MONO piece is cut, pinned and finished in our Milanese atelier. No seasons chased, no shortcuts taken. A garment leaves the table only when it cannot be improved.</p>
+          <ul class="atelier__facts reveal">
+            <li><strong>48h</strong><span>of handwork in every coat</span></li>
+            <li><strong>100%</strong><span>traceable natural fibres</span></li>
+            <li><strong>1</strong><span>atelier — Milano, since 2016</span></li>
+          </ul>
+        </div>
+        <figure class="atelier__media reveal" data-parallax>
+          <img loading="lazy"
+            src="https://image.shutterstock.com/z/stock-photo-fashion-designer-hands-pinning-fabric-on-a-black-mannequin-creative-tailoring-process-garment-1371248093.jpg"
+            alt="Designer's hands pinning fabric on a black mannequin" />
+        </figure>
+        <figure class="atelier__media atelier__media--small reveal" data-parallax>
+          <img loading="lazy"
+            src="https://image.shutterstock.com/z/stock-photo-a-charismatic-tailor-deeply-focused-on-his-craft-his-skilled-hands-carefully-stitch-fabric-a-2603127517.jpg"
+            alt="Tailor hand-stitching fabric in the atelier" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="section newsletter" id="newsletter">
+      <div class="newsletter__inner">
+        <p class="kicker reveal">05 — Stay close</p>
+        <h2 class="section__title reveal">First to know,<br /><em>never spammed</em></h2>
+        <p class="lead reveal">One letter per collection. Early access, atelier notes, nothing else.</p>
+        <form class="newsletter__form reveal" id="newsForm" novalidate>
+          <label class="sr-only" for="newsEmail">Email address</label>
+          <input type="email" id="newsEmail" name="email" placeholder="your@email.com" autocomplete="email" required />
+          <button type="submit" class="btn btn--dark" data-cursor="hover">Subscribe</button>
+        </form>
+        <p class="newsletter__msg" id="newsMsg" role="status"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="footer__logo" aria-label="MONO — back to top">MONO</a>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <h4>Maison</h4>
+        <ul>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#campaign">Campaign</a></li>
+          <li><a href="#atelier">Atelier</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Client care</h4>
+        <ul>
+          <li><a href="#">Shipping &amp; returns</a></li>
+          <li><a href="#">Size guide</a></li>
+          <li><a href="#">Garment care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">Pinterest</a></li>
+          <li><a href="#" rel="noopener">Spotify</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Flagships</h4>
+        <ul>
+          <li>Via della Spiga, Milano</li>
+          <li>Rue Saint-Honoré, Paris</li>
+          <li>Omotesandō, Tokyo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> MONO S.p.A. — All imagery via Shutterstock, for demonstration only.</p>
+      <p>A study in monochrome.</p>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping bag" aria-hidden="true">
+    <header class="drawer__head">
+      <h3>Your bag <span id="drawerCount">(0)</span></h3>
+      <button class="drawer__close" id="drawerClose" aria-label="Close bag">✕</button>
+    </header>
+    <div class="drawer__items" id="drawerItems">
+      <p class="drawer__empty">Your bag is empty — for now.</p>
+    </div>
+    <footer class="drawer__foot">
+      <div class="drawer__total"><span>Subtotal</span><strong id="drawerTotal">€0</strong></div>
+      <p class="drawer__note">Shipping &amp; duties calculated at checkout.</p>
+      <button class="btn btn--dark btn--full" id="checkoutBtn">Checkout</button>
+    </footer>
+  </aside>
+
+  <!-- ============ QUICK VIEW MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__panel">
+      <button class="modal__close" id="modalClose" aria-label="Close quick view">✕</button>
+      <figure class="modal__media"><img id="modalImg" src="" alt="" /></figure>
+      <div class="modal__info">
+        <p class="kicker" id="modalCat"></p>
+        <h3 id="modalName"></h3>
+        <p class="modal__price" id="modalPrice"></p>
+        <p class="modal__desc" id="modalDesc"></p>
+        <div class="modal__sizes" role="group" aria-label="Select size">
+          <button class="size">XS</button><button class="size is-active">S</button>
+          <button class="size">M</button><button class="size">L</button><button class="size">XL</button>
+        </div>
+        <button class="btn btn--dark btn--full" id="modalAdd">Add to bag</button>
+        <p class="modal__ship">Free express shipping · Free returns within 30 days</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
